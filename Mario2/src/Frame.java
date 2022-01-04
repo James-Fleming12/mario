@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -13,6 +14,7 @@ import javax.swing.Timer;
 public class Frame extends JPanel implements KeyListener, ActionListener{
 	
 	character test =  new character();
+	
 	public void paint(Graphics g) {
 		super.paintComponent(g);
 		test.paint(g);
@@ -42,8 +44,7 @@ public class Frame extends JPanel implements KeyListener, ActionListener{
 	}
 	
 	public static void main(String[] arg) {
-		Frame f = new Frame();
-		
+		Frame f = new Frame();		
 	}	
 	
 	@Override
@@ -63,6 +64,12 @@ public class Frame extends JPanel implements KeyListener, ActionListener{
 		// TODO Auto-generated method stub
 		
 	}
+	//@Override
+	//public void mouseClicked(MouseEvent arg0) {
+	//	// TODO Auto-generated method stub
+	//	System.out.println("Y" + arg0.getY);
+	//	System.out.println("X" + arg0.getX);
+	//}
 	
 	Timer t;
 
